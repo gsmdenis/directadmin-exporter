@@ -14,15 +14,28 @@ To install and set up the DirectAdmin Exporter, follow these steps:
    git clone https://github.com/piotr-ku/directadmin-exporter.git
    ```
 
-2. Install the required dependencies. Make sure you have [Go](https://golang.org/doc/install) installed.
-
-3. Build the exporter:
+2. Install the required dependencies. Make sure you have [Go](https://golang.org/doc/install) installed. 
+i.e: centos 9 :
+```shell
+sudo dnf update
+ ```
+```shell
+sudo dnf install golang
+ ```
+```shell
+go version
+ ```
+3. Go to directadmin-exporter
+```shell
+cd directadmin-exporter
+ ```
+4. Build the exporter:
 
    ```shell
    go build -o directadmin-exporter
    ```
 
-4. Run the exporter:
+5. Run the exporter:
 
    ```shell
    ./directadmin-exporter
